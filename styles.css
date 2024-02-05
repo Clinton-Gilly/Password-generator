@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #307f97;
+    margin-left: auto;
+}
+.logo {
+    position: flex;
+    top: 10px;
+    right: 10px;
+    max-width: 100px; 
+    border-radius: 10px; 
+}
+
+#favicon {
+    border-radius: 90%;
+    overflow: hidden; 
+}
+
+
+
+.container {
+    background-color: rgb(134, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  
+  .container header {
+    margin-bottom: 20px; 
+  }
+  
+  .container .options,
+  .container .password-result,
+  .container footer {
+    width: 100%;
+    max-width: 600px; }
+  
+.options {
+    margin-bottom: 20px;
+    flex-direction: column;
+    
+}
+.options label, .options input {
+    margin-bottom: 10px;
+}
+
+label {
+   
+    margin-bottom: 5px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #4c63af;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#copy-btn {
+    background-color: #007bff;
+}
+
+.password-result {
+    text-align: center;
+    
+}
+.password-box {
+    border: 2px solid #19528b;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    color: #000000;
+    background-color: rgb(23, 152, 233);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #12455f;
+    color: white; 
+    padding: 10px; 
+    text-align: center;
+    margin-top: auto;
+   
+}
+.password-maker {
+   
+    
+    margin-top: 10px;
+    background-color: rgb(165, 235, 255);
+}

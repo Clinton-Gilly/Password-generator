@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/Gilly Logo.png"
+    />
+
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="./img/Gilly Logo.png" alt="Gilly Logo" class="logo" />
+      <h1>Password Generator</h1>
+      <div class="options">
+        <div class="password-maker">
+          <label for="length">Password Length:</label>
+          <input type="number" id="length" min="8" max="32" value="12" />
+          <div class="checkboxes">
+            <label for="lowercase">Include lowercase letters (a-z)</label>
+            <input type="checkbox" id="lowercase" checked />
+            <label for="uppercase">Include uppercase letters (A-Z)</label>
+            <input type="checkbox" id="uppercase" checked />
+            <label for="numbers">Include numbers (0-9)</label>
+            <input type="checkbox" id="numbers" checked />
+            <label for="symbols">Include symbols (!@#$%^&*)</label>
+            <input type="checkbox" id="symbols" checked />
+          </div>
+        </div>
+        <button id="generate-btn">Generate Password</button>
+        <div class="password-result">
+          <p>Generated Password:</p>
+
+          <div class="password-box">
+            <span id="password"></span>
+          </div>
+          <br />
+          <hr />
+          <button id="copy-btn">Copy to Clipboard</button>
+        </div>
+        <h2>What makes a password strong?</h2>
+        <div class="strength-category">
+          <h4>Long</h4>
+          <p>
+            The longer a password, the more secure it is. A strong password
+            should be at least 10 characters long.
+          </p>
+        </div>
+        <div class="strength-category">
+          <h4>Complex</h4>
+          <p>
+            Strong passwords use a combination of letters, numbers, cases, and
+            symbols to form an unpredictable string of characters that doesn't
+            resemble words or names.
+          </p>
+        </div>
+        <div class="strength-category">
+          <h4>Unique</h4>
+          <p>
+            A strong password should be unique to each account to reduce
+            vulnerability in the event of a hack.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2024 GillySia.Get It Done. | Password Security Tips</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
